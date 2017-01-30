@@ -1,0 +1,19 @@
+{
+  "name": "presenchecker",
+  "version": "1.0.0",
+  "description": "Checks fritzbox, whether a given device (by mac address) is online or offline",
+  "main": "presencechecker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JayBread/PresenceChecker.git"
+  },
+  "author": "Jay Bread",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JayBread/PresenceChecker/issues"
+  },
+  "homepage": "https://github.com/JayBread/PresenceChecker#readme"
+}
