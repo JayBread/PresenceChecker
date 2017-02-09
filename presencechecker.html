@@ -1,0 +1,41 @@
+<script type="text/javascript">
+    RED.nodes.registerType('Device-Presence-FritzBox',{
+        category: 'function',
+        color: '#a6bbcf',
+        defaults: {
+        	fritzboxhost: {value: "", required: true},
+            deviceName: {value: "", required: true},
+    		macAddress: {value: "", required: true}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "fritz_icon.png",
+        label: function() {
+            return this.name||"Device Presence Check";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="Device-Presence-FritzBox">
+    <div class="form-row">
+        <label for="node-input-fritzboxhost"><i class="icon-tag"></i>DFritzBox Host Address</label>
+        <input type="text" id="node-input-fritzboxhost" placeholder="fritzboxhost">
+    </div>
+    <div class="form-row">
+        <label for="node-input-deviceName"><i class="icon-tag"></i>Device Name</label>
+        <input type="text" id="node-input-deviceName" placeholder="deviceName">
+    </div>
+    <div class="form-row">
+        <label for="node-input-macAddress"><i class="icon-tag"></i> MAC Address</label>
+        <input type="text" id="node-input-macAddress" placeholder="macAddress">
+    </div>
+
+</script>
+
+<script type="text/x-red" data-help-name="Device-Presence-FritzBox">
+    <p>The DevicePresenceFritzBox node returns the online status of a device by specified macAddress.</p>
+	<p>Following parameters need to be configured in configuration tab: fritzBox-Host, DeviceName, MacAdress<p>
+	<p>It will then return a message with the following two attributes: <code>msg.deviceName</code> and <code>msg.onlineStatus</code>.<p>
+	<p><code>msg.onlineStatus = "online"</code> means that the device is present at fritzbox<p>
+	<p><code>msg.onlineStatus = "offline"</code> means that the device is NOT present at fritzbox<p>
+</script>
