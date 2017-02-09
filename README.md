@@ -1,7 +1,7 @@
 <snippet>
-  <content><![CDATA[
+  <content>
 
-# ${1:NODE-RED: Device Presence Check for FritzBox}
+# NODE-RED: Device Presence Check for FritzBox
 The DevicePresenceFritzBox node returns the online status of a device by specified macAddress.
 
 ## Installation
@@ -26,6 +26,6 @@ TODO: Write credits
 ## License
 TODO: Write license
 
-]]></content>
+</content>
   <tabTrigger>readme</tabTrigger>
 </snippet>
