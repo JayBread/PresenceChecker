@@ -1,5 +1,5 @@
 /**
- * http://usejsdoc.org/
+ * NODE-RED: Device Presence Check for FritzBox
  */
 
 //Imports
